@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ro" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
+    <meta name="author" content="tazz"/>
+    <meta name="theme-color" content="#ed2603" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#ed2603" media="(prefers-color-scheme: dark)">
+
+    <title> Tazz - Comandă online meniul zilei sau orice poftești</title>
+
+    <link rel="manifest" href="/manifest.json"/>
+
+            <meta name="description" content="Comandă online orice poftești. Livrăm acasă, la birou sau unde îți dorești! Zilnic poți comanda și Meniul Zilei"/>
+    
+            <link rel="canonical" href="https://tazz.ro/">
+    
+                                        <meta property="al:android:protocol_name" content="eucemananc"/>
+                            <meta property="al:android:app_name" content="tazz"/>
+                            <meta property="al:android:url" content="eucemananc://"/>
+                            <meta property="al:android:package" content="com.xtremeweb.eucemananc"/>
+                            <meta property="al:android:app_url" content="https://play.google.com/store/apps/details?id=com.xtremeweb.eucemananc"/>
+                                                <meta property="al:ios:protocol_name" content="eucemananc"/>
+                            <meta property="al:ios:app_name" content="tazz"/>
+                            <meta property="al:ios:url" content="eucemananc://"/>
+                            <meta property="al:ios:app_store_id" content="1137016841"/>
+                            <meta property="al:ios:app_url" content="https://apps.apple.com/ro/app/eucemananc/id1137016841"/>
+                        
+    
+                                        <meta name="google-site-verification" content="lgMQUA2WpxLRZjuWGBqcWMQRb0MEvA0vx048mVgOTus"/>
+                            <meta name="google-site-verification" content="cXcd0v2Kf-xnALYx7FaAijq-nXVX7M2OBnXv4Q3KwsA"/>
+                                                <meta name="alexaVerifyID" content="0dAw_wHLmd8YL3mz-ZGPGw8Mpks"/>
+                                                <meta name="msvalidate.01" content="3DA742F96FD242A468C799A54BA82327"/>
+                                                <meta name="p:domain_verify" content="434cd37463a19c778185c51d0362ef8f"/>
+                                                <meta name="ahrefs-site-verification" content="30c4442aaec747e1342581413b97470f31d43f397edbc4d6ddedfbbe0cf507a1"/>
+                            <meta name="apple-itunes-app" content="app-id=1137016841, app-argument=https://tazz.ro/">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+            <meta property="og:title" content="Tazz - Comandă online meniul zilei sau orice poftești">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://tazz.ro/">
+        <meta property="og:locale" content="ro">
+        <meta property="og:site_name" content="tazz">
+                    <meta property="og:image" content="https://webstatic.tazz.ro/build/media/tazz-logo.d946753f.png">
+                            <meta property="og:description" content="Comandă online orice poftești. Livrăm acasă, la birou sau unde îți dorești! Zilnic poți comanda și Meniul Zilei">
+            
+    <link rel="preload" href="https://webstatic.tazz.ro/build/fonts/effra_bd.b1942bb2.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="https://webstatic.tazz.ro/build/fonts/effra_md.85393988.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="https://webstatic.tazz.ro/build/fonts/effra_rg.59f00cee.woff2" as="font" crossorigin="anonymous">
+
+            <link rel="stylesheet" href="https://webstatic.tazz.ro/build/tazz.fc4a0371.css" crossorigin="anonymous" integrity="sha384-fWcAp3BYf0QKrunk0q2zWux1wWXS/TiBj/iJvidP/F/mUlYc2F0aJpW6s6c7kcYF">
+    
+    <script nonce="U+KqstuU3AVJqo9ncIEk9w==">
+                    window.sessionStorage.setItem("user", "null");
+                    window.sessionStorage.setItem("userAddresses", "[]");
+                    window.sessionStorage.setItem("selectedAddress", "null");
+                    window.sessionStorage.setItem("userToken", "null");
+                    window.sessionStorage.setItem("cartKey", "null");
+                    window.sessionStorage.setItem("addressAddUrl", "\"\\\/address\\\/add\"");
+                    window.sessionStorage.setItem("addressUpdateUrl", "\"\\\/address\\\/update\"");
+                    window.sessionStorage.setItem("addressDefaultUrl", "\"\\\/address\\\/set-default\"");
+                    window.sessionStorage.setItem("baseApiUrl", "\"https:\\\/\\\/tapi.tazz.ro\"");
+                    window.sessionStorage.setItem("locationGeocodingUrl", "\"https:\\\/\\\/geo-coding.tazz.ro\"");
+                    window.sessionStorage.setItem("locationTilesUrl", "\"https:\\\/\\\/maptiles.tazz.ro\\\/tile\\\/{z}\\\/{x}\\\/{y}.png\"");
+                    window.sessionStorage.setItem("appCode", "\"web\"");
+                    window.sessionStorage.setItem("appVersion", "\"3910\"");
+                    window.sessionStorage.setItem("deliveryType", "\"delivery\"");
+                    window.sessionStorage.setItem("pageCity", "null");
+                    window.sessionStorage.setItem("cities", "[{\"id\":1,\"name\":\"Timi\\u0219oara\",\"slug\":\"timisoara\",\"featured\":true,\"active\":true},{\"id\":9,\"name\":\"Cluj-Napoca\",\"slug\":\"cluj-napoca\",\"featured\":true,\"active\":true},{\"id\":16,\"name\":\"Bucure\\u0219ti\",\"slug\":\"bucuresti\",\"featured\":true,\"active\":true},{\"id\":6,\"name\":\"Ia\\u0219i\",\"slug\":\"iasi\",\"featured\":true,\"active\":true},{\"id\":2,\"name\":\"Arad\",\"slug\":\"arad\",\"featured\":true,\"active\":true},{\"id\":14,\"name\":\"Bra\\u0219ov\",\"slug\":\"brasov\",\"featured\":true,\"active\":true},{\"id\":12,\"name\":\"Oradea\",\"slug\":\"oradea\",\"featured\":true,\"active\":true},{\"id\":4,\"name\":\"Sibiu\",\"slug\":\"sibiu\",\"featured\":true,\"active\":true},{\"id\":7,\"name\":\"Deva\",\"slug\":\"deva\",\"featured\":true,\"active\":true},{\"id\":13,\"name\":\"Alba Iulia\",\"slug\":\"alba-iulia\",\"featured\":true,\"active\":true},{\"id\":11,\"name\":\"Baia Mare\",\"slug\":\"baia-mare\",\"featured\":true,\"active\":true},{\"id\":15,\"name\":\"Ploie\\u0219ti\",\"slug\":\"ploiesti\",\"featured\":true,\"active\":true},{\"id\":8,\"name\":\"Craiova\",\"slug\":\"craiova\",\"featured\":true,\"active\":true},{\"id\":20,\"name\":\"Br\\u0103ila\",\"slug\":\"braila\",\"featured\":true,\"active\":true},{\"id\":17,\"name\":\"Re\\u0219i\\u021ba\",\"slug\":\"resita\",\"featured\":true,\"active\":true},{\"id\":18,\"name\":\"Boto\\u0219ani\",\"slug\":\"botosani\",\"featured\":true,\"active\":true},{\"id\":19,\"name\":\"Pite\\u0219ti\",\"slug\":\"pitesti\",\"featured\":true,\"active\":true},{\"id\":3,\"name\":\"T\\u00e2rgu Mure\\u0219\",\"slug\":\"targu-mures\",\"featured\":true,\"active\":true},{\"id\":5,\"name\":\"Constan\\u021ba\",\"slug\":\"constanta\",\"featured\":true,\"active\":true},{\"id\":10,\"name\":\"Satu Mare\",\"slug\":\"satu-mare\",\"featured\":true,\"active\":false},{\"id\":21,\"name\":\"Suceava\",\"slug\":\"suceava\",\"featured\":true,\"active\":true},{\"id\":22,\"name\":\"Roman\",\"slug\":\"roman\",\"featured\":true,\"active\":true},{\"id\":23,\"name\":\"Gala\\u021bi\",\"slug\":\"galati\",\"featured\":true,\"active\":true},{\"id\":24,\"name\":\"R\\u00e2mnicu V\\u00e2lcea\",\"slug\":\"ramnicu-valcea\",\"featured\":true,\"active\":true},{\"id\":25,\"name\":\"Bac\\u0103u\",\"slug\":\"bacau\",\"featured\":true,\"active\":true},{\"id\":26,\"name\":\"T\\u00e2rgu Jiu\",\"slug\":\"targu-jiu\",\"featured\":true,\"active\":true},{\"id\":27,\"name\":\"Drobeta-Turnu Severin\",\"slug\":\"drobeta-turnu-severin\",\"featured\":true,\"active\":true},{\"id\":28,\"name\":\"Buz\\u0103u\",\"slug\":\"buzau\",\"featured\":true,\"active\":true},{\"id\":29,\"name\":\"Slatina\",\"slug\":\"slatina\",\"featured\":true,\"active\":true},{\"id\":31,\"name\":\"Untold\",\"slug\":\"untold\",\"featured\":true,\"active\":false},{\"id\":32,\"name\":\"Zalau\",\"slug\":\"zalau\",\"featured\":false,\"active\":true},{\"id\":33,\"name\":\"Turda\",\"slug\":\"turda\",\"featured\":false,\"active\":false},{\"id\":34,\"name\":\"Dej\",\"slug\":\"dej\",\"featured\":false,\"active\":false},{\"id\":35,\"name\":\"Lugoj\",\"slug\":\"lugoj\",\"featured\":false,\"active\":false},{\"id\":36,\"name\":\"Caransebes\",\"slug\":\"caransebes\",\"featured\":false,\"active\":false},{\"id\":37,\"name\":\"Medias\",\"slug\":\"medias\",\"featured\":false,\"active\":true},{\"id\":38,\"name\":\"Odorheiu Secuiesc\",\"slug\":\"odorheiu-secuiesc\",\"featured\":false,\"active\":false},{\"id\":39,\"name\":\"Fagaras\",\"slug\":\"fagaras\",\"featured\":false,\"active\":false},{\"id\":40,\"name\":\"Snagov\",\"slug\":\"snagov\",\"featured\":false,\"active\":false},{\"id\":41,\"name\":\"Buftea\",\"slug\":\"buftea\",\"featured\":false,\"active\":false},{\"id\":42,\"name\":\"Balotesti\",\"slug\":\"balotesti\",\"featured\":false,\"active\":false},{\"id\":43,\"name\":\"Mogosoaia\",\"slug\":\"mogosoaia\",\"featured\":false,\"active\":false},{\"id\":44,\"name\":\"Mangalia\",\"slug\":\"mangalia\",\"featured\":false,\"active\":false},{\"id\":46,\"name\":\"Bragadiru\",\"slug\":\"bragadiru\",\"featured\":false,\"active\":false},{\"id\":47,\"name\":\"Corbeanca\",\"slug\":\"corbeanca\",\"featured\":false,\"active\":false},{\"id\":48,\"name\":\"Otopeni\",\"slug\":\"otopeni\",\"featured\":false,\"active\":false},{\"id\":49,\"name\":\"Tunari\",\"slug\":\"tunari\",\"featured\":false,\"active\":false},{\"id\":50,\"name\":\"Rosu\",\"slug\":\"rosu\",\"featured\":false,\"active\":false},{\"id\":51,\"name\":\"Domnesti\",\"slug\":\"domnesti\",\"featured\":false,\"active\":false},{\"id\":52,\"name\":\"Chitila\",\"slug\":\"chitila\",\"featured\":false,\"active\":false},{\"id\":53,\"name\":\"Focsani\",\"slug\":\"focsani\",\"featured\":false,\"active\":true},{\"id\":54,\"name\":\"T\\u00e2rgovi\\u0219te\",\"slug\":\"targoviste\",\"featured\":false,\"active\":true},{\"id\":55,\"name\":\"Petro\\u0219ani\",\"slug\":\"petrosani\",\"featured\":false,\"active\":true}]");
+                    window.sessionStorage.setItem("cart", "null");
+                    window.sessionStorage.setItem("popups", "[]");
+        
+        window.appConfig = {
+            gtmKey: "GTM-MC7XHZ",
+            analyticsEvents: [{"event":"dataLayer-initialized","user":{"loggedInStatus":"Logged Out"},"page":[],"email":null,"phone_number":null}],
+            tiktokPixelId: "C3QJCE04C3SCJI4RGD60",
+            facebookPixelId: "285528244964105",
+            cspScriptNonce: "U+KqstuU3AVJqo9ncIEk9w==",
+            firebaseAppcheckEnable: true,
+            firebaseAppcheckRecaptchaSiteKey: "6LdGgQAhAAAAABTjow6W1f1LZd3d0QqotlOa2bSs",
+            firebaseAppcheckDebugToken: "",
+            googleRecaptchaEnable: true,
+            googleRecaptchaSiteKey: "6Le9kCokAAAAACHn4RuyZlsnrHwZvKkwS20OE2E5",
+            language: "ro"
+        }
+    </script>
+
+            <script src="https://webstatic.tazz.ro/build/runtime.b6522a60.js" crossorigin="anonymous" defer integrity="sha384-8MgnARS+buDb6jNxdCZY7XIZdLYucpbwvsKKWAcM/rzlWxe2H/8uBBXcAjLnMuMF"></script><script src="https://webstatic.tazz.ro/build/606.dfc686ed.js" crossorigin="anonymous" defer integrity="sha384-INwgJWkYueHG3efGx8TEIxBX696yow7hlRctrw98Yewt1O7Sv8ykQQp3lmgxIuwa"></script><script src="https://webstatic.tazz.ro/build/tazz.136dc72e.js" crossorigin="anonymous" defer integrity="sha384-oN8c1sUMS9Y6ZqbMI9J99fNLXbcgozyjNAuc1MXDVTDrZSYDPaOUbfhd0CSwlYr9"></script>
+    
+<!-- 2perf tracking code START -->
+<script defer src="https://attr-2p.com/bb2c8b1b5/clc/1.js"></script>
+<!-- 2perf tracking code END -->
+
+</head>
+<body>
+
+
+<header class="tz-header">
+    <tz-header-box class="tz-header-box tz-header-loading"
+                   login="https://tazz.ro/auth/login"
+                   register="https://tazz.ro/auth/register"
+                   logout="https://tazz.ro/auth/logout"
+                   pinurl="https://webstatic.tazz.ro/build/media/svg/pin.d25d6127.svg"
+                   pinxurl="https://webstatic.tazz.ro/build/media/svg/icon-location-white.c1d5e1f0.svg"
+                   filterable="true"
+    >
+        
+                    <a href="https://tazz.ro/" title="Acasă" class="logo-box zlink">
+                <div class="logo-container">
+                    <img src="https://webstatic.tazz.ro/build/media/tazz-logo.b20a07d6.svg" alt="Tazz logo" class="tz-logo"/>
+                </div>
+            </a>
+		
+        
+								<div class="tz-search-bar tpl"></div>
+		
+                <tz-account-box class="tz-account-box right display-account"
+                        url="https://tazz.ro/auth/login"
+                        login="https://tazz.ro/auth/login"
+                        register="https://tazz.ro/auth/register"
+                        logout="https://tazz.ro/auth/logout"
+        >
+            <div slot-account-icon class="account-icon tpl">
+                                    <img src="https://webstatic.tazz.ro/build/media/svg/icon-account.1a834720.svg"
+                     alt="Autentifică-te"
+                     class="zicon"
+                />
+                            </div>
+            <div slot-account-label class="account-label tpl ">
+                                    Autentifică-te                            </div>
+
+
+            <div slot-account-tab-icon class="account-icon tpl">
+                                    <img src="https://webstatic.tazz.ro/build/media/svg/icon-account-white.83bf142a.svg"
+                     alt="Autentifică-te"
+                     class="zicon"
+                />
+                
+            </div>
+            <div slot-account-tab-label class="account-label tpl ">
+                                    Autentifică-te                            </div>
+
+                                        <a href="https://tazz.ro/content/help" class="item tpl" slot-account-item
+                                    >
+                    <img class="icon" src="https://static.tazz.ro/Svgs/tazz-help-account-icon.svg" alt="">
+                    Ajutor
+                </a>
+            		</tz-account-box>
+        
+        
+        
+			</tz-header-box>
+</header>
+<div class="tz-header-shadow"></div>
+
+    <tz-landing class="landing">
+
+        <section class="landing-address">
+            <div class="la-address-bg"></div>
+            <div class="la-address-contents contents">
+                <div class="landing-title"><h1>Cu Tazz primești<br />produsele rapid și în siguranță!</h1></div>
+
+                <tz-landing-location address="" url="https://tazz.ro/">
+                    <div class="location-details">
+                        Introdu adresa de livrare pentru a verifica dacă serviciul nostru este disponibil în locația ta.                        <span class="location-info">Detalii</span>
+                    </div>
+
+                    <div class="location-search">
+                        <div class="location-box">
+                            <div class="location-search-input ztext big">
+                                <div class="search-icon"></div>
+                                <input type="text"
+                                       class="location-input text disabled"
+                                       placeholder="Caută adresa ta"
+                                       readonly
+                                />
+                            </div>
+                            <a class="location-search-action zbtn big disabled"
+                               href="https://tazz.ro/"
+                            >
+                                Continuă                            </a>
+                        </div>
+                    </div>
+
+                    <div class="location-options">
+                        <div class="option-text">sau</div>
+                        <a class="option-link" href="#">Folosește poziționarea pe hartă</a>
+                    </div>
+                </tz-landing-location>
+            </div>
+        </section>
+
+        <section class="landing-cities">
+            <div class="la-cities-contents contents">
+                <div class="cities-cards-list">
+                <h2 class="cities-title">Orașe cu Tazz</h2>
+                                                                     <a href="https://tazz.ro/timisoara/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-timisoara.5edfd74c.png" alt="Timișoara" loading="lazy">
+                            </picture>
+                            <h3>Timișoara</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/cluj-napoca/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-cluj-napoca.cfe273cc.png" alt="Cluj-Napoca" loading="lazy">
+                            </picture>
+                            <h3>Cluj-Napoca</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/bucuresti/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-bucuresti.04824c40.png" alt="București" loading="lazy">
+                            </picture>
+                            <h3>București</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/iasi/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-iasi.7ee83abd.png" alt="Iași" loading="lazy">
+                            </picture>
+                            <h3>Iași</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/arad/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-arad.1464d3f7.png" alt="Arad" loading="lazy">
+                            </picture>
+                            <h3>Arad</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/brasov/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-brasov.44e662fc.png" alt="Brașov" loading="lazy">
+                            </picture>
+                            <h3>Brașov</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/oradea/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-oradea.968e3d8f.png" alt="Oradea" loading="lazy">
+                            </picture>
+                            <h3>Oradea</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/sibiu/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-sibiu.120315ec.png" alt="Sibiu" loading="lazy">
+                            </picture>
+                            <h3>Sibiu</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/deva/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-deva.5c28a37d.png" alt="Deva" loading="lazy">
+                            </picture>
+                            <h3>Deva</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/alba-iulia/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-alba-iulia.cdbbec2d.png" alt="Alba Iulia" loading="lazy">
+                            </picture>
+                            <h3>Alba Iulia</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/baia-mare/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-baia-mare.c094834c.png" alt="Baia Mare" loading="lazy">
+                            </picture>
+                            <h3>Baia Mare</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/ploiesti/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-ploiesti.12d82b66.png" alt="Ploiești" loading="lazy">
+                            </picture>
+                            <h3>Ploiești</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/craiova/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-craiova.1087c719.png" alt="Craiova" loading="lazy">
+                            </picture>
+                            <h3>Craiova</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/braila/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-braila.aacba518.png" alt="Brăila" loading="lazy">
+                            </picture>
+                            <h3>Brăila</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/resita/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-resita.df4ba8ca.png" alt="Reșița" loading="lazy">
+                            </picture>
+                            <h3>Reșița</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/botosani/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-botosani.a3d87b2c.png" alt="Botoșani" loading="lazy">
+                            </picture>
+                            <h3>Botoșani</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/pitesti/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-pitesti.6fdd93fd.png" alt="Pitești" loading="lazy">
+                            </picture>
+                            <h3>Pitești</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/targu-mures/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-targu-mures.771c0069.png" alt="Târgu Mureș" loading="lazy">
+                            </picture>
+                            <h3>Târgu Mureș</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/constanta/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-constanta.56a1724f.png" alt="Constanța" loading="lazy">
+                            </picture>
+                            <h3>Constanța</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/suceava/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-suceava.31a1c594.png" alt="Suceava" loading="lazy">
+                            </picture>
+                            <h3>Suceava</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/roman/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-roman.a3742562.png" alt="Roman" loading="lazy">
+                            </picture>
+                            <h3>Roman</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/galati/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-galati.825f8e25.png" alt="Galați" loading="lazy">
+                            </picture>
+                            <h3>Galați</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/ramnicu-valcea/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-ramnicu-valcea.6452ff36.png" alt="Râmnicu Vâlcea" loading="lazy">
+                            </picture>
+                            <h3>Râmnicu Vâlcea</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/bacau/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-bacau.28288288.png" alt="Bacău" loading="lazy">
+                            </picture>
+                            <h3>Bacău</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/targu-jiu/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-targu-jiu.9f226ca8.png" alt="Târgu Jiu" loading="lazy">
+                            </picture>
+                            <h3>Târgu Jiu</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/drobeta-turnu-severin/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-drobeta-turnu-severin.bb90923e.png" alt="Drobeta-Turnu Severin" loading="lazy">
+                            </picture>
+                            <h3>Drobeta-Turnu Severin</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/buzau/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-buzau.2fc5ee2d.png" alt="Buzău" loading="lazy">
+                            </picture>
+                            <h3>Buzău</h3>
+                        </a>
+                                                                                             <a href="https://tazz.ro/slatina/oras"
+                           class="city-card address-check">
+                            <picture>
+                                <img src="https://webstatic.tazz.ro/build/media/images/city-slatina.9f999ca5.png" alt="Slatina" loading="lazy">
+                            </picture>
+                            <h3>Slatina</h3>
+                        </a>
+                                                                                                                                                                                                                                                                         
+            <tz-small-cities citieslist="[{&quot;id&quot;:1,&quot;name&quot;:&quot;Timi\u0219oara&quot;,&quot;slug&quot;:&quot;timisoara&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:9,&quot;name&quot;:&quot;Cluj-Napoca&quot;,&quot;slug&quot;:&quot;cluj-napoca&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:16,&quot;name&quot;:&quot;Bucure\u0219ti&quot;,&quot;slug&quot;:&quot;bucuresti&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:6,&quot;name&quot;:&quot;Ia\u0219i&quot;,&quot;slug&quot;:&quot;iasi&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:2,&quot;name&quot;:&quot;Arad&quot;,&quot;slug&quot;:&quot;arad&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:14,&quot;name&quot;:&quot;Bra\u0219ov&quot;,&quot;slug&quot;:&quot;brasov&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:12,&quot;name&quot;:&quot;Oradea&quot;,&quot;slug&quot;:&quot;oradea&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:4,&quot;name&quot;:&quot;Sibiu&quot;,&quot;slug&quot;:&quot;sibiu&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:7,&quot;name&quot;:&quot;Deva&quot;,&quot;slug&quot;:&quot;deva&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:13,&quot;name&quot;:&quot;Alba Iulia&quot;,&quot;slug&quot;:&quot;alba-iulia&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:11,&quot;name&quot;:&quot;Baia Mare&quot;,&quot;slug&quot;:&quot;baia-mare&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:15,&quot;name&quot;:&quot;Ploie\u0219ti&quot;,&quot;slug&quot;:&quot;ploiesti&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:8,&quot;name&quot;:&quot;Craiova&quot;,&quot;slug&quot;:&quot;craiova&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:20,&quot;name&quot;:&quot;Br\u0103ila&quot;,&quot;slug&quot;:&quot;braila&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:17,&quot;name&quot;:&quot;Re\u0219i\u021ba&quot;,&quot;slug&quot;:&quot;resita&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:18,&quot;name&quot;:&quot;Boto\u0219ani&quot;,&quot;slug&quot;:&quot;botosani&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:19,&quot;name&quot;:&quot;Pite\u0219ti&quot;,&quot;slug&quot;:&quot;pitesti&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:3,&quot;name&quot;:&quot;T\u00e2rgu Mure\u0219&quot;,&quot;slug&quot;:&quot;targu-mures&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:5,&quot;name&quot;:&quot;Constan\u021ba&quot;,&quot;slug&quot;:&quot;constanta&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:21,&quot;name&quot;:&quot;Suceava&quot;,&quot;slug&quot;:&quot;suceava&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:22,&quot;name&quot;:&quot;Roman&quot;,&quot;slug&quot;:&quot;roman&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:23,&quot;name&quot;:&quot;Gala\u021bi&quot;,&quot;slug&quot;:&quot;galati&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:24,&quot;name&quot;:&quot;R\u00e2mnicu V\u00e2lcea&quot;,&quot;slug&quot;:&quot;ramnicu-valcea&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:25,&quot;name&quot;:&quot;Bac\u0103u&quot;,&quot;slug&quot;:&quot;bacau&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:26,&quot;name&quot;:&quot;T\u00e2rgu Jiu&quot;,&quot;slug&quot;:&quot;targu-jiu&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:27,&quot;name&quot;:&quot;Drobeta-Turnu Severin&quot;,&quot;slug&quot;:&quot;drobeta-turnu-severin&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:28,&quot;name&quot;:&quot;Buz\u0103u&quot;,&quot;slug&quot;:&quot;buzau&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:29,&quot;name&quot;:&quot;Slatina&quot;,&quot;slug&quot;:&quot;slatina&quot;,&quot;featured&quot;:true,&quot;active&quot;:true},{&quot;id&quot;:32,&quot;name&quot;:&quot;Zalau&quot;,&quot;slug&quot;:&quot;zalau&quot;,&quot;featured&quot;:false,&quot;active&quot;:true},{&quot;id&quot;:37,&quot;name&quot;:&quot;Medias&quot;,&quot;slug&quot;:&quot;medias&quot;,&quot;featured&quot;:false,&quot;active&quot;:true},{&quot;id&quot;:53,&quot;name&quot;:&quot;Focsani&quot;,&quot;slug&quot;:&quot;focsani&quot;,&quot;featured&quot;:false,&quot;active&quot;:true},{&quot;id&quot;:54,&quot;name&quot;:&quot;T\u00e2rgovi\u0219te&quot;,&quot;slug&quot;:&quot;targoviste&quot;,&quot;featured&quot;:false,&quot;active&quot;:true},{&quot;id&quot;:55,&quot;name&quot;:&quot;Petro\u0219ani&quot;,&quot;slug&quot;:&quot;petrosani&quot;,&quot;featured&quot;:false,&quot;active&quot;:true}]"></tz-small-cities>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="landing-cities">
+        </section>
+
+        <section class="landing-advertising">
+            <div class="la-advertising-contents contents">
+                <h2 class="ad-title">Food & more</h2>
+                <div class="ad-app-download">
+                    <div class="app-download-title">Descarcă aplicația și începe cumpărăturile!</div>
+                    <div class="app-download-info">
+                        <div class="item">Notificări meniul zilei</div>
+                        <div class="item">Oferte de la restaurantul preferat</div>
+                        <div class="item">Produse eMAG în 60 min.</div>
+                        <div class="item">Supermarket online</div>
+                        <div class="item">Urmărire comandă live</div>
+                    </div>
+                    <div class="app-download-store">
+                        <a href="https://apps.apple.com/ro/app/eucemananc/id1137016841" class="store-apple download"></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.xtremeweb.eucemananc" class="store-android download"></a>
+                        <a href="https://appgallery.huawei.com/app/C106330381" class="store-huawei download"></a>
+                    </div>
+                </div>
+                <div class="ad-illustration"></div>
+            </div>
+        </section>
+
+        
+        <section class="landing-shoppings">
+            <div class="la-shoppings-contents contents">
+                <div class="shoppings-schedule">
+                    <h1>Programează-ți<br />cumpărăturile</h1>
+                    <div>
+                        <p>Bucură-te de noi funcționalități în platforma Tazz. Acum ai posibilitatea de a planifica comenzi care să ajungă la o anumită oră în ziua următoare. Ai găsit magazinul închis, poți să-ți comanzi pentru a doua zi.</p>
+                    </div>
+                </div>
+                <div class="shoppings-illustration"></div>
+            </div>
+        </section>
+
+        <section class="landing-group-order">
+                <div class="la-group-contents contents">
+                    <div class="group-illustration"></div>
+                    <div class="group-info">
+                        <h1>Comandă de grup pentru restaurante</h1>
+                        <div>
+                            <p>
+                                Împarte masa cu colegii.<br />Te poți bucura împreună cu colegii de comanda de grup. Primești un link, îți adaugi cumpărăturile în coș și inițiatorul comenzii face comanda. Produsele ajung la voi toate odată.                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    </tz-landing>
+
+<footer class="footer">
+			<div class="seo-cities-list-section">
+			<div class="container">
+				<div class="seo-cities-list">
+					<ul>
+													<li>
+								<a href="https://tazz.ro/timisoara/oras">Timișoara</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/cluj-napoca/oras">Cluj-Napoca</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/bucuresti/oras">București</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/iasi/oras">Iași</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/arad/oras">Arad</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/brasov/oras">Brașov</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/oradea/oras">Oradea</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/sibiu/oras">Sibiu</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/deva/oras">Deva</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/alba-iulia/oras">Alba Iulia</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/baia-mare/oras">Baia Mare</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/ploiesti/oras">Ploiești</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/craiova/oras">Craiova</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/braila/oras">Brăila</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/resita/oras">Reșița</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/botosani/oras">Botoșani</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/pitesti/oras">Pitești</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/targu-mures/oras">Târgu Mureș</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/constanta/oras">Constanța</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/suceava/oras">Suceava</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/roman/oras">Roman</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/galati/oras">Galați</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/ramnicu-valcea/oras">Râmnicu Vâlcea</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/bacau/oras">Bacău</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/targu-jiu/oras">Târgu Jiu</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/drobeta-turnu-severin/oras">Drobeta-Turnu Severin</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/buzau/oras">Buzău</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/slatina/oras">Slatina</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/zalau/oras">Zalau</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/medias/oras">Medias</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/focsani/oras">Focsani</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/targoviste/oras">Târgoviște</a>
+							</li>
+													<li>
+								<a href="https://tazz.ro/petrosani/oras">Petroșani</a>
+							</li>
+											</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+		<div class="footer-section one">
+			<div class="footer-section-title">Descarcă aplicația</div>
+			<div class="content">
+				Ai Tazz în buzunarul tău! Descarcă aplicația și deschide lumea Tazz unde ai sute de restaurante, produse eMAG în 60 minute, supermarket online, notificari la minut și în legătură cu comanda ta. Descarcă aplicația acum!			</div>
+			<div class="app-download-store-assets">
+                <div class="download-text">Aplicația mobilă</div>
+				<div class="icons-container">
+                    <a href="https://play.google.com/store/apps/details?id=com.xtremeweb.eucemananc" target="_blank" rel="noopener">
+					    <div class="app-download-icon android"></div>
+				    </a>
+                    <a href="https://apps.apple.com/ro/app/eucemananc/id1137016841" target="_blank" rel="noopener">
+					    <div class="app-download-icon apple"></div>
+				    </a>
+                                        <a href="https://appgallery.huawei.com/app/C106330381" target="_blank" rel="noopener">
+					    <div class="app-download-icon huawei"></div>
+				    </a>
+                </div>
+			</div>
+		</div>
+		<div class="footer-section">
+			<div class="footer-section-title">Informații</div>
+			<ul>
+				<li>
+					<a href="https://livratori.tazz.ro/">
+						Devino rider Tazz					</a>
+				</li>
+				<li>
+					<a href="https://tazz.ro/contact/devino-partener-tazz">
+						Devino partener Tazz					</a>
+				</li>
+				<li>
+					<a href="https://tazz.ro/cariere">
+						Cariere in Tazz					</a>
+				</li>
+				<li class="social-media-item">
+					Urmărește-ne pe					<div class="social-media-icons">
+						<a href="https://www.facebook.com/tazzromania" target="_blank" rel="noopener">
+							<img src="https://webstatic.tazz.ro/build/media/img/icon-facebook.30158300.svg" alt="facebook"/>
+						</a>
+						<a href="https://www.instagram.com/tazz.ro/" target="_blank" rel="noopener">
+							<img src="https://webstatic.tazz.ro/build/media/img/icon-instagram.95a65619.svg" alt="instagram"/>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-section">
+			<div class="footer-section-title">General</div>
+			<ul>
+				<li><a href="https://tazz.ro/content/termeni_si_conditii">Termeni și condiții</a></li>
+
+				<li><a href="https://tazz.ro/content/tcg-servicii-transport">Condiţii generale privind furnizarea serviciilor poştale</a></li>
+
+				<li><a href="https://tazz.ro/content/privacy">Prelucrarea datelor cu caracter personal</a></li>
+
+                <div class="anpc-container-mobile">
+					<a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener">
+						<div class="anpc-icon"></div>
+					</a>
+
+					<a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO" target="_blank" rel="noopener">
+						<div class="anpc-sal-icon"></div>
+					</a>
+				</div>
+			</ul>
+		</div>
+		<div class="footer-section">
+			<div class="footer-section-title">Contact</div>
+			<ul>
+				<li><a href="https://tazz.ro/content/help">Ajutor şi suport</a></li>
+			</ul>
+		</div>
+		<div class="social-media-copyright">
+			<div class="social-media-item">
+				<div class="social-media-icons">
+					Urmărește-ne pe					<a href="https://www.facebook.com/tazzromania" target="_blank" rel="noopener">
+						<img src="https://webstatic.tazz.ro/build/media/img/icon-facebook.30158300.svg" alt="facebook"/>
+					</a>
+					<a href="https://www.instagram.com/tazz.ro/" target="_blank" rel="noopener">
+						<img src="https://webstatic.tazz.ro/build/media/img/icon-instagram.95a65619.svg" alt="instagram"/>
+					</a>
+					<div class="copyright-text">Copyright 2023 HCL Online Advertising SRL. Toate drepturile rezervate!</div>
+				</div>
+
+				<div class="anpc-container">
+					<a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener">
+						<div class="anpc-icon"></div>
+					</a>
+
+					<a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO" target="_blank" rel="noopener">
+						<div class="anpc-sal-icon"></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<tz-dialog></tz-dialog>
+<tz-errors-dialog></tz-errors-dialog>
+
+    <tz-cookie-consent data-nosnippet></tz-cookie-consent>
+
+<tz-welcome-popup dialog="0"></tz-welcome-popup>
+<tz-terms-agreement dialog="0"></tz-terms-agreement>   
+<tz-theme-switch debug="false"></tz-theme-switch>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MC7XHZ" height="0" width="0" class="hidden" title=""></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+</body>
+</html>

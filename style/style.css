@@ -1,0 +1,10 @@
+QWidget{
+    font-size: 25px;
+    margin: auto;
+    color: green;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
